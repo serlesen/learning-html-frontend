@@ -64,16 +64,17 @@ src/
 │   ├── button/         Button (primary, secondary, quiet)
 │   ├── icons/          SVG icons as React components, drawn with currentColor
 │   ├── language-select/ LanguageSelect: switches and saves the interface language
+│   ├── more-games/     MoreGames: the top bar menu linking the other games of the series
 │   ├── rich-text/      RichText: text where `backticks` mark inline code
 │   └── toggle/         Toggle switch
 ├── hooks/              shared hooks: useFitScale (scale a box to fit), useLatest (ref to the latest value), useCodeComments (translated code comments)
 ├── i18n/               i18next setup and locales/<en|fr|es|it|de>/translation.json
-├── layout/             PublicLayout: top bar with the brand, the step strip and the language selector; Footer with the project links
+├── layout/             PublicLayout: top bar with the brand, the step strip, the More games menu and the language selector; Footer with the project links
 ├── services/           progressService and languageService: read and write the progress and the language in localStorage
 ├── stores/             progressStore (zustand): current step, completed steps, code and hints per step
 ├── styles/             _config.scss (tokens), _typography.scss, _mixins.scss, global.scss
 ├── test/               shared test setup, factories and render helpers
-├── types/              enums (EditorTab, BuildIssue, LintWarning, DistanceUnit, ButtonVariant, Language, FooterLink) and JSDoc entities
+├── types/              enums (EditorTab, BuildIssue, LintWarning, DistanceUnit, ButtonVariant, Language, FooterLink, Game) and JSDoc entities
 ├── utils/              frame (preview iframe), compare (build check), cssLint (CSS warnings), codeComments (translated code comments)
 └── views/
     └── playground/     the only page, its components grouped by feature
